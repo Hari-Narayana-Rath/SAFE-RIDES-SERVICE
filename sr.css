@@ -1,0 +1,225 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+#cmpnyname {
+    font-weight: bold;
+    /* Make the text bold */
+    font-size: 28px;
+    /* Adjust the font size as needed */
+    text-align: center;
+    /* Add margin top for spacing */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+
+nav .right {
+    display: flex;
+    align-items: center;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+}
+
+.left img {
+    width: 100px;
+    margin-right: auto;
+}
+
+/* .left p {
+    margin-inline: 22px;
+    margin-top: 25px;
+    background-color: black;
+} */
+nav button {
+    width: 100px;
+    height: 36px;
+    background-color: #000000;
+    color: black;
+    font-weight: 600;
+    border: none;
+    border-radius: 22px;
+    /* margin-top: 12px; */
+}
+
+nav button a:hover {
+    text-decoration: underline;
+}
+
+.card {
+
+    align-content: left;
+    /* background-image: url('card.webp'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* Adjusted */
+    height: auto;
+}
+
+
+
+.main {
+    width: 400px;
+    height: 430px;
+    margin-left: 24px;
+    background-color: rgba(8, 8, 8, 0.241);
+}
+
+.main .icon {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(224, 223, 223);
+}
+
+.main .icon .car {
+    margin-inline: 74px;
+    margin-top: 31px;
+    border-bottom: 3px solid black;
+}
+
+.icon .car i {
+    font-size: 123%;
+}
+
+.card {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.card h1 {
+    padding: 33px;
+    font-size: 33px;
+}
+
+.card input {
+    width: 330px;
+    height: 30px;
+    background-color: rgb(250, 244, 244);
+    padding: 8px;
+    margin-top: 8px;
+    border: none;
+    margin-left: 33px;
+}
+/* <input id="book" type="submit" value="Submit"> */
+
+.card .btn {
+    margin-left: 33px;
+    margin-top: 44px;
+}
+
+.card .btn .fr {
+    width: 140px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-inline: 18px;
+}
+
+.card .btn button {
+    width: 140px;
+    height: 40px;
+    background-color: rgb(174, 172, 172);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-inline: 18px;
+    /* text-align: center; */
+}
+
+.head h1 {
+    padding: 33px;
+    font-size: 43px;
+}
+
+.ride .uber {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+.uber .auto {
+    display: flex;
+    margin-top: 33px;
+}
+
+.uber .auto img {
+    margin-inline: 33px;
+    width: 43%;
+}
+
+.safe {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    margin-top: 33px;
+}
+
+.app {
+    background-color: rgb(40, 34, 34);
+}
+
+.app h1 {
+    padding: 33px;
+    font-size: 44px;
+}
+
+.app .down {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 35px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    padding: 44px;
+    margin-top: 22px;
+}
+
+button a {
+    text-decoration: none;
+    /* Remove underline */
+    font-size: larger;
+    outline: none;
+    color: white;
+    /* Remove blue outline */
+}
+
+#booked {
+    /* justify-content: center;
+     */
+    position: relative;
+    left: 20cm;
+}
+
+.footer a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#toplogo img {
+    height: 50px;
+    width: 100%;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe rides</title>
+
+    <link rel="stylesheet" href="sr.css">
+    <script src="https://kit.fontawesome.com/f30fac2c61.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Catamaran:wght@200&family=Courgette&family=Edu+TAS+Beginner:wght@700&family=Lato:wght@300;900&family=Mukta:wght@700&family=Mulish:wght@300&family=Open+Sans&family=PT+Sans:ital,wght@1,700&family=Poppins:wght@300&family=Raleway:wght@100&family=Roboto+Condensed:wght@700&family=Roboto+Slab&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        #okkk {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: left;
+            height: 10vh;
+        }
+
+        #cmpnyname {
+            font-weight: bold;
+            font-size: 30px;
+            
+        }
+         /* Custom button style */
+         #book {
+            padding: 12px 24px;
+            background-color: #685f5f; /* Red background color */
+            color: #fff; /* White text color */
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        /* Hover effect */
+        #book:hover {
+            background-color: #e4ae39; /* Darker red on hover */
+        }
+    </style>
+
+    
+</head>
+
+<body style="background-color: rgb(0, 0, 0);color:white ;">
+ 
+    <nav>
+        <div id="okkk">
+
+            <div class="left">
+                <a id="toplogo" href="sr.html"><img src="logo.jpg" alt=""></a>
+                <h1 id="cmpnyname"> <b><i>SAFERIDE</i></b> </h1>
+                <button><a href="about.html">ABOUT</a></button>
+                <button><a href="help.html">HELP</a></button>    
+            </div>
+        </div>
+        <div class="right">
+            <button><a href="bookings.html">BOOKINGS</a></button>
+            <button><a href="profile.html">PROFILE</a></button>
+
+        </div>
+    </nav>
+   
+
+
+    <div class="card" style="width: 100vw;height: 100vh;">
+        <!-- <source src="sr.mp4" type="video/mp4"> -->
+        <video src="sr.mp4" autoplay muted loop style="width: 100vw;height: 90vh;object-fit: cover;"></video>
+            <div class="main" style="position: relative; left: 15cm;top: -77vh;">
+
+            <div class="icon">
+
+                <div class="car">
+                    <i class="fa-solid fa-car"></i>
+                </div>
+
+                <div class="car">
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+            </div>
+
+            <h1>Request a ride now</h1>
+            <form id="booked" action="bookings.php" method="post" style="position:initial;">
+                <label for="pickup">Pickup Location:</label><br>
+                <input type="text" id="pickup" name="pickup" required>
+                
+                <label for="drop">Drop Location:</label><br>
+                <input type="text" id="drop" name="drop" required>
+
+                <div style="position: relative;">
+                    <button id="book" type="submit" value="submit">book now</button>
+                </div>
+            </form>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="head">
+        <h1>Ride with Safe Rides</h1>
+    </div>
+
+    <div class="ride">
+        <div class="uber">
+            <div class="auto">
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1649914471/assets/89/8e4239-5e7d-4de7-bf71-00cc32d468db/original/Auto-150X150p4x.png"
+                    alt="">
+                <div>
+                    <h2>Safe Rides Moto</h2>
+                    <p>Get affordable Safe Rides auto ride with no hangling.</p>
+                </div>
+            </div>
+
+            <div class="auto">
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1649914539/assets/86/82f8b3-e2e6-45f8-a8f7-fdc511f709e0/original/Moto-150X150p4x.png"
+                    alt="">
+                <div>
+                    <h2>Safe Rides Moto</h2>
+                    <p>Get affordable Safe Rides auto ride with no hangling.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="uber">
+            <div class="auto">
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1630531077/assets/38/494083-cc23-4cf7-801c-0deed7d9ca55/original/uber-hourly.png"
+                    alt="">
+                <div>
+                    <h2>Safe Rides Moto</h2>
+                    <p>Get affordable Safe Rides auto ride with no hangling.</p>
+                </div>
+            </div>
+
+            <div class="auto">
+                <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_84,h_84/v1649914597/assets/f7/7f583f-447a-4cf7-8da6-6ad254f0a66b/original/Intercity-150X150p4x.png"
+                    alt="">
+                <div>
+                    <h2>Safe Rides Moto</h2>
+                    <p>Get affordable Safe Rides auto ride with no hangling.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="head">
+        <h1> Focused on safety, wherever you go</h1>
+    </div>
+    <div class="safe">
+        <div class="img">
+            <img height="333px" width="499px" src="pass.jpg" alt="">
+            <p>Our commitment to your safety</p>
+        </div>
+        <div class="img">
+            <img src="https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_499,h_333/v1613520285/assets/c2/91ea9c-90d7-4c36-a740-d7844536694e/original/Cities_Home_Img2x.png"
+                alt="">
+            <p>Setting 10,000+ cities in motion</p>
+        </div>
+    </div>
+    <div class="app">
+        <h1>There’s more to love in the app</h1>
+        <div style="text-align: center;">
+            <a id="toplogoo" href="sr.html"><img height="300px" src="logo.jpg" alt=""></a>
+        </div>
+        <div class="footer">
+            <div class="list">
+                <h2>Company</h2> <br>
+                <a href=""><p>About us</p></a><br>
+                <a href=""><p>Our offerings</p></a><br>
+                <a href=""><p>Newsroom</p></a><br>
+                <a href=""><p>Investors</p></a><br>
+                <a href=""><p>Blog</p></a>
+            </div>
+            <div class="list">
+                <h2>Products</h2><br>
+                <a href=""><p>Ride</p></a><br>
+                <a href=""><p>Drive </p></a><br>
+                <a href=""><p>Deliver </p></a><br>
+                <a href=""><p>Eat</p></a><br>
+                <a href=""><p>Safe Rides for Business</p></a>
+            </div>
+
+            <div class="list">
+                <h2>Global citizenship</h2><br>
+                <a href=""><p>Safety</p></a><br>
+                <a href=""><p>Diversity and Inclusion</p></a>
+            </div>
+            <div class="list">
+                <h2>Travel </h2><br>
+                <a href=""><p>Airports </p></a><br>
+                <a href=""><p>Cities</p></a>
+            </div>
+        </div>
+        <script>
+            document.getElementById("book").addEventListener("click", function (event) {
+                var pickupLocation = document.getElementById("pickup").value.trim();
+                var dropLocation = document.getElementById("drop").value.trim();
+
+                if (pickupLocation === "" || dropLocation === "") {
+                    alert("Please fill in all fields.");
+                    event.preventDefault();
+                } else {
+                    window.location.href = "bookings.html";
+                }
+            });
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #locationDetails {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Location Display</h2>
+    <div id="locationDetails">
+        <!-- Location details will be dynamically inserted here -->
+    </div>
+
+    <script>
+        // Make an asynchronous request to fetch location data from process_location.php
+        fetch('bookings.php')
+            .then(response => response.text())
+            .then(data => {
+                // Update HTML content with location details
+                document.getElementById('locationDetails').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error fetching location details:', error);
+            });
+    </script>
+</body>
+
+</html>
